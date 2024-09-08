@@ -1,0 +1,53 @@
+/* Global Styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Make sure this CSS is placed in your main stylesheet (index.css) */
+
+/* Ensure full-width container for the scrollable section */
+.scroll-container {
+  display: flex;
+  overflow-x: auto; /* Enables horizontal scrolling */
+  gap: 1rem; /* Adds spacing between the cards */
+  scroll-behavior: smooth;
+  padding: 1rem 0;
+  white-space: nowrap; /* Prevents content from wrapping to a new line */
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar for a clean look */
+}
+
+/* Set a wider width for article cards to make them scrollable */
+.article-card {
+  width: 100%; /* Minimum width of 300px per card */
+  flex-shrink: 0; /* Prevent shrinking */
+  width: calc(100% - 1rem); /* Responsive width minus the gap */
+  max-width: 800px; /* Optionally set a max width for larger screens */
+  border: 1px solid #fffdfd;
+  border-radius: 12px;
+  background-color: #ffffff;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+/* Larger width on wider screens */
+@media (min-width: 768px) {
+  .article-card {
+    min-width: 600px; /* Make cards wider for larger screens */
+  }
+}
+
+.article-card img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 1rem;
+  object-fit: cover;
+}
+
+/* Hover effect */
+.article-card:hover {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}

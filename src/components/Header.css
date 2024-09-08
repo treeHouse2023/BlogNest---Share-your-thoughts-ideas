@@ -1,0 +1,144 @@
+/* Header container */
+.header-container {
+  width: 80%;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 25px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+  font-family: "Quicksand", sans-serif;
+}
+
+/* Logo */
+.site-logo {
+  font-size: 24px;
+  font-weight: 400;
+  color: #000;
+  margin: 0;
+  font-family: "Freehand", cursive;
+}
+
+/* Navigation Menu */
+.header-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-item:hover {
+  color: #000;
+  border-radius: 50px;
+}
+
+/* Right side buttons */
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.email-button1,
+.email-button {
+  background-color: #218838;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 5px;
+}
+
+/* Hamburger menu icon */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 4px 0;
+  transition: 0.3s;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .header-nav {
+    display: none; /* Hide the menu initially */
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    z-index: 10;
+  }
+
+  .header-nav.nav-open {
+    display: flex; /* Show the menu when open */
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .email-button1,
+  .email-button {
+    font-size: 10px;
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-container {
+    width: 100%;
+    padding: 10px;
+    box-shadow: none;
+  }
+
+  .site-logo {
+    font-size: 20px;
+  }
+
+  .email-button1,
+  .email-button {
+    font-size: 9px;
+    padding: 5px 10px;
+  }
+}

@@ -1,0 +1,27 @@
+/* Footer.css */
+footer {
+  background-color: #f9f9f9;
+  border-top: 1px solid #e0e0e0;
+  font-family: "Arial", sans-serif;
+}
+
+footer a {
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #555;
+}
+
+footer .border-b {
+  border-color: #e0e0e0;
+}
+
+footer .bg-gray-100 {
+  background-color: #f9f9f9;
+}
+
+footer .bg-white {
+  background-color: #fff;
+}
