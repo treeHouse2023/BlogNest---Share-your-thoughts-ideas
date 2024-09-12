@@ -55,6 +55,7 @@ Check out the deployed version of Blognest here: https://blog-nest-share-your-th
 ## About the Creator
 
 **Nishant Chauhan**
+
 Computer Application Student | Web Developer | Freelance Video Editor | Digital Marketing Enthusiast
 
 Blognest is part of my continuous effort to build digital solutions that make online interactions smoother and more impactful. With a focus on web development and project management, I strive to deliver platforms that are both functional and user-friendly.
