@@ -28,7 +28,7 @@ Blognest empowers users to share their voice by providing a user-friendly platfo
 ## Technologies Used
 - **Frontend**: HTML, CSS, JavaScript, React JS, Tailwind CSS, Bootstrap
 - **Version Control**: Git and GitHub for code management
-- **Deployment**: Deployed using **Vercel** [Add Deployed Link Here]
+- **Deployment**: Deployed using **Vercel**
 
 ## How It Works
 Blognest allows users to manage their blog posts with full CRUD operations:
